@@ -31,11 +31,12 @@
 <body>
 <main>
   <h1><span class="lantern">✦</span> Lanterns — Privacy Policy</h1>
-  <p class="eff">Effective date: June 26, 2026</p>
+  <p class="eff">Effective date: July 7, 2026 — applies to Lanterns on iOS and Android</p>
 
   <p>Lanterns is a daily logic-puzzle game. Each day you solve one puzzle: place a
   lantern in every row, column, and colored region without letting any two touch. This
-  policy explains what the app does — and does not do — with your information.</p>
+  policy explains what the app does — and does not do — with your information, on both
+  the iOS and Android versions.</p>
 
   <h2>The short version</h2>
   <p>Lanterns is built to need essentially none of your data. There are
@@ -50,18 +51,18 @@
   <h2>Information Lanterns uses</h2>
   <p><strong>On-device data.</strong> Your <strong>streak</strong>,
   <strong>solve history</strong>, daily completion, and <strong>app preferences</strong>
-  are stored locally on your device using Apple's standard storage (UserDefaults). This
-  information never leaves your device and is not transmitted to the developer or anyone
-  else.</p>
+  are stored locally on your device, using each platform's standard local storage
+  (UserDefaults on iOS, SharedPreferences on Android). This information never leaves your
+  device and is not transmitted to the developer or anyone else.</p>
 
-  <p><strong>Notifications (optional, off until you allow them).</strong> If you turn on
-  the daily reminder, Lanterns schedules a <strong>local notification</strong> on your
-  device to nudge you about the day's puzzle. These reminders are generated on your phone,
-  are not sent through any server, and involve no personal data leaving your device. You
-  can turn them off at any time.</p>
+  <p><strong>Notifications (optional, off until you allow them; currently iOS only).</strong>
+  If you turn on the daily reminder, Lanterns schedules a <strong>local notification</strong>
+  on your device to nudge you about the day's puzzle. These reminders are generated on your
+  phone, are not sent through any server, and involve no personal data leaving your device.
+  You can turn them off at any time.</p>
 
   <p><strong>Sharing your result.</strong> When you tap <em>Share</em>, Lanterns hands a
-  spoiler-free emoji grid and your solve time to the iOS share sheet so that
+  spoiler-free emoji grid and your solve time to your device's native share sheet so that
   <strong>you</strong> can post it wherever you choose. This happens only when you ask for
   it, and the result you share contains no personal information — and nothing is sent to
   the developer.</p>
@@ -82,10 +83,15 @@
   <p>Lanterns integrates no third-party services. The only exception is during beta
   testing:</p>
   <ul>
-    <li><strong>Apple TestFlight (beta only)</strong> — while Lanterns is distributed as a
-    TestFlight beta, Apple may collect crash logs and basic usage information from the beta
+    <li><strong>Apple TestFlight (iOS beta only)</strong> — while Lanterns is distributed as
+    a TestFlight beta, Apple may collect crash logs and basic usage information from the beta
     build to help diagnose problems, governed by the
     <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. The developer
+    does not receive your personal information through this.</li>
+    <li><strong>Google Play (Android beta/closed testing only)</strong> — while Lanterns is
+    distributed through Google Play's testing tracks, Google may collect crash logs and basic
+    usage information from the test build to help diagnose problems, governed by the
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The developer
     does not receive your personal information through this.</li>
   </ul>
 
@@ -95,10 +101,12 @@
   no server-side copy, because there is no server.</p>
 
   <h2>Permissions and your choices</h2>
-  <p>You're always in control. The only permission Lanterns may ask for is
-  <strong>Notifications</strong>, for the optional daily reminder. You can grant or revoke
-  it at any time in the iOS <strong>Settings</strong> app. Turning it off disables the
-  reminder, but the app continues to work for everything else.</p>
+  <p>You're always in control. On iOS, the only permission Lanterns may ask for is
+  <strong>Notifications</strong>, for the optional daily reminder — you can grant or revoke
+  it at any time in the iOS <strong>Settings</strong> app, and turning it off disables the
+  reminder without affecting anything else. The Android version currently requests
+  <strong>no permissions at all</strong> — it has no notification feature and, like iOS,
+  makes no network requests.</p>
 
   <h2>Children's privacy</h2>
   <p>Lanterns does not knowingly collect personal information from anyone, including
