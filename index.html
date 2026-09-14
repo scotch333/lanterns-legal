@@ -31,7 +31,7 @@
 <body>
 <main>
   <h1><span class="lantern">✦</span> Lanterns — Privacy Policy</h1>
-  <p class="eff">Effective date: July 7, 2026 — applies to Lanterns on iOS and Android</p>
+  <p class="eff">Effective date: July 7, 2026, updated September 12, 2026 — applies to Lanterns on iOS and Android</p>
 
   <p>Lanterns is a daily logic-puzzle game. Each day you solve one puzzle: place a
   lantern in every row, column, and colored region without letting any two touch. This
@@ -42,11 +42,12 @@
   <p>Lanterns is built to need essentially none of your data. There are
   <strong>no accounts</strong>, <strong>no analytics</strong>,
   <strong>no advertising</strong>, <strong>no tracking</strong>, and
-  <strong>no third-party data collection</strong>. The app has no servers and
-  <strong>makes no network requests at all</strong> — your puzzles are generated on your
-  device, and your streak, solve history, and settings live
-  <strong>entirely on your device</strong>. Nothing about your play is sent to the
-  developer or anyone else.</p>
+  <strong>no third-party data collection</strong>. The app has no servers of its own —
+  your puzzles are generated on your device, and your streak, solve history, and settings
+  live <strong>entirely on your device</strong>. Its one network request is a once-a-day
+  read of a small, public announcements file (see below), which carries
+  <strong>nothing about you</strong>. Nothing about your play is sent to the developer or
+  anyone else.</p>
 
   <h2>Information Lanterns uses</h2>
   <p><strong>On-device data.</strong> Your <strong>streak</strong>,
@@ -69,7 +70,8 @@
 
   <h2>What Lanterns does not do</h2>
   <ul>
-    <li>It does <strong>not</strong> make any network requests or talk to any server.</li>
+    <li>It does <strong>not</strong> talk to any server about you. Its only network request
+    is described under "Announcements" below: a read of a public file, with nothing sent.</li>
     <li>It does <strong>not</strong> require an account or sign-in.</li>
     <li>It does <strong>not</strong> collect analytics or usage statistics.</li>
     <li>It does <strong>not</strong> contain advertising or ad-tracking.</li>
@@ -107,8 +109,19 @@
   reminder without affecting anything else. On Android, Lanterns asks for
   <strong>Notifications</strong> only when you switch on the daily reminder or the streak
   warning — never at launch — and it declares one further permission so those reminders can
-  be re-scheduled after your phone restarts. Nothing else. Like iOS, the Android version
-  makes <strong>no network requests</strong>.</p>
+  be re-scheduled after your phone restarts, and the standard network permission for the
+  announcements read described below. Nothing else.</p>
+
+  <h2>Announcements (iOS and Android)</h2>
+  <p>Once a day at most, when you open the app, Lanterns reads a small public file that
+  lists in-app announcements — a new game, a seasonal challenge, a note about a fix. It is a
+  plain download of a static file hosted on GitHub Pages
+  (<code>scotch333.github.io/announcements</code>). The request contains
+  <strong>nothing about you</strong>: no account, no identifier, no information about your
+  play, no cookies. As with visiting any web page, the host can see your device's IP address
+  and a generic description of the app and operating system version, and nothing else.
+  Lanterns keeps its last copy of the file on your device so it works offline, remembers
+  only which announcements it has already shown you, and sends nothing back.</p>
 
   <h2>Children's privacy</h2>
   <p>Lanterns does not knowingly collect personal information from anyone, including
