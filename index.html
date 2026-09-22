@@ -44,10 +44,14 @@
   <strong>no advertising</strong>, <strong>no tracking</strong>, and
   <strong>no third-party data collection</strong>. The app has no servers of its own —
   your puzzles are generated on your device, and your streak, solve history, and settings
-  live <strong>entirely on your device</strong>. Its one network request is a once-a-day
-  read of a small, public announcements file (see below), which carries
+  live <strong>entirely on your device</strong>. Its one always-on network request is a
+  once-a-day read of a small, public announcements file (see below), which carries
   <strong>nothing about you</strong>. Nothing about your play is sent to the developer or
-  anyone else.</p>
+  anyone else — with one <strong>optional</strong> exception on Android: if you are signed in to
+  Google Play Games on your device (automatically, when your Play Games settings allow it, or by
+  tapping <em>Leaderboards</em> in Settings), your best streaks and daily solve times are sent to
+  Google under your Play Games profile (see "Leaderboards" below). Lanterns is fully playable
+  without ever signing in.</p>
 
   <h2>Information Lanterns uses</h2>
   <p><strong>On-device data.</strong> Your <strong>streak</strong>,
@@ -72,7 +76,8 @@
   <ul>
     <li>It does <strong>not</strong> talk to any server about you. Its only network request
     is described under "Announcements" below: a read of a public file, with nothing sent.</li>
-    <li>It does <strong>not</strong> require an account or sign-in.</li>
+    <li>It does <strong>not</strong> require an account or sign-in. (Android leaderboards
+    are optional and work only while you are signed in to Google Play Games.)</li>
     <li>It does <strong>not</strong> collect analytics or usage statistics.</li>
     <li>It does <strong>not</strong> contain advertising or ad-tracking.</li>
     <li>It does <strong>not</strong> track you across apps or websites.</li>
@@ -122,6 +127,23 @@
   and a generic description of the app and operating system version, and nothing else.
   Lanterns keeps its last copy of the file on your device so it works offline, remembers
   only which announcements it has already shown you, and sends nothing back.</p>
+
+  <h2>Leaderboards (Android, optional)</h2>
+  <p>Lanterns for Android can show leaderboards through <strong>Google Play Games Services</strong>,
+  and submits scores only while you are signed in to your Google Play Games profile. That
+  sign-in happens in one of two ways: automatically at launch, if your device's Play Games
+  settings allow apps to sign you in (Google's own setting, which you can turn off in the Play
+  Games app), or when you tap <em>Leaderboards</em> in Settings. While you are not signed in, no
+  scores and no player identifier are sent — the app only checks, as any Play Games-enabled app
+  does, whether Play services are available. Once signed in, Lanterns submits your
+  <strong>best streaks</strong> (Lanterns, Mini Sudoku, Fireflies, Fuse and Daily Hard) and your
+  <strong>daily solve times</strong> to Google, associated with your Play Games player ID, so
+  they can appear on the leaderboards. That data is held by Google under the
+  <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and shown to other
+  players as leaderboard entries under your Play Games name. The developer does not receive it.
+  Signing out of Play Games stops any further submissions; removing the app from your Play Games
+  profile, in the Play Games app, removes its data there. Everything else in Lanterns keeps
+  working exactly the same whether or not you sign in.</p>
 
   <h2>Children's privacy</h2>
   <p>Lanterns does not knowingly collect personal information from anyone, including
